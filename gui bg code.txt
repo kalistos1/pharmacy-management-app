@@ -1,0 +1,6 @@
+    def set_bg(self, master):
+        self.load = Image.open("loginIcon.png")
+        self.render = ImageTk.PhotoImage(self.load)
+        self.img = Label(self.master, image=self.render)
+        self.img.image =self.render
+        self.img.place(x=0, y=0)
